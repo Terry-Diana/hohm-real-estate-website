@@ -2,13 +2,13 @@
 
 /* start: global styles */
 body {
-  font-family: "Roboto", "Helvetica", "Sans-serif";
   margin: 0;
   padding: 0;
+  color: #777;
   font-size: 1rem;
   font-weight: 400;
-  color: #777;
   line-height: 1.7;
+  font-family: "Roboto", "Helvetica", "Sans-serif";
 }
 
 * {
@@ -20,9 +20,9 @@ body {
 }
 
 .container {
-  max-width: 1140px;
   margin: 0 auto;
   padding: 0 20px;
+  max-width: 1140px;
 }
 
 .flex {
@@ -41,8 +41,8 @@ h5 {
 
 h1,
 h2 {
-  font-family: "Playfair Display", serif;
   font-weight: 800;
+  font-family: "Playfair Display", serif;
 }
 
 h1 {
@@ -52,20 +52,20 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
   color: #1f51ff;
-  margin-bottom: 1rem;
   line-height: 1.2;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
-  font-size: 1.4rem;
   font-weight: 300;
+  font-size: 1.4rem;
 }
 
 h4 {
-  font-size: 1.2rem;
   font-weight: 300;
+  font-size: 1.2rem;
 }
 
 h5 {
@@ -78,63 +78,62 @@ p {
 }
 
 button.rounded {
-  background: #1f51ff;
   border: none;
   color: #fff;
-  font-size: 16px;
-  border-radius: 30px;
-  padding: 10px 30px;
-  line-height: 1.5;
   cursor: pointer;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background: #1f51ff;
 }
 
 p.large-paragraph {
-  font-size: 1.25rem;
   font-weight: 300;
+  font-size: 1.25rem;
 }
 /* end: global styles */
 
 /* start: header styles */
 #header-hero-container {
   min-height: 600px;
-  height: calc(100vh);
   position: relative;
+  height: calc(100vh);
 }
 
 header {
-  background: transparent;
-  padding: 1rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  position: fixed;
-  width: 100%;
   z-index: 3;
+  width: 100%;
+  padding: 1rem 0;
+  position: fixed;
+  background: transparent;
 }
 
 #logo {
-  font-family: "Roboto", "Helvetica", "Sans-serif";
-  font-size: 1.7rem;
-  font-weight: 800;
-  color: #fff;
-  text-decoration: none;
-  position: relative;
   top: 4px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.7rem;
+  position: relative;
+  text-decoration: none;
+  font-family: "Roboto", "Helvetica", "Sans-serif";
 }
 
 .hamburger-menu {
-  background-color: transparent;
-  border: 1px solid #fff;
-  padding: 3px 5px;
   width: 30px;
+  display: none;
   cursor: pointer;
   margin-top: 10px;
-  display: none;
+  padding: 3px 5px;
+  border: 1px solid #fff;
+  background-color: transparent;
 }
 
 .hamburger-menu .strip {
-  display: block;
   height: 1px;
-  background-color: #fff;
   margin: 4px 0;
+  display: block;
+  background-color: #fff;
 }
 
 header ul {
@@ -142,8 +141,8 @@ header ul {
 }
 
 header ul li {
-  display: inline-block;
   margin: 0 15px;
+  display: inline-block;
 }
 
 #close-flyout {
@@ -173,75 +172,49 @@ header ul.is-sticky li a.active {
 
 /* start: hero section styles */
 #hero {
-  background: url("img/house1.jpg") center center no-repeat;
-  background-size: cover;
-  position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
-  height: 100%;
   width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background: url("img/house1.jpg") center center no-repeat;
 }
 
 #hero .fade {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
-  background: rgba(56, 67, 77, 0.9);
   z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(56, 67, 77, 0.9);
 }
 
 #hero .hero-text {
-  position: absolute;
-  top: 50%;
-  margin: -75px auto 0;
   left: 0;
   right: 0;
+  top: 50%;
   z-index: 2;
-  color: #fff;
   width: 500px;
+  color: #fff;
+  position: absolute;
   text-align: center;
+  margin: -75px auto 0;
 }
 
 #hero .hero-text p {
-  line-height: 1.5em;
-  font-weight: 300;
   font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5em;
 }
 /* end: hero section styles */
 
-/* start: how it works styles */
-#how-it-works {
-  padding: 3rem 0;
-  background: #f8f9fa;
-  text-align: center;
-}
-
-#how-it-works h2 {
-  margin-bottom: 3rem;
-}
-
-#how-it-works .flex > div {
-  width: 30%;
-}
-
-#how-it-works h4 {
-  color: #343a40;
-  margin-top: 1rem;
-}
-
-#how-it-works span.fas {
-  color: #1f51ff;
-  font-size: 35px;
-}
-/* end: how it works styles */
-
 /* start: properties styles */
 #properties {
-  margin: 4rem 0 8rem;
   position: relative;
+  margin: 2rem 0 4rem;
 }
 
 #properties h2 {
@@ -253,21 +226,21 @@ header ul.is-sticky li a.active {
 }
 
 #properties .container:before {
-  content: "/";
-  position: absolute;
-  right: 80px;
   top: 18px;
+  right: 80px;
+  content: "/";
   color: #999;
+  position: absolute;
 }
 
 #properties-slider a.slick-arrow {
+  right: 0;
+  top: -78px;
   color: #000;
   position: absolute;
-  top: -78px;
-  right: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
   text-decoration: none;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 
 #properties-slider a.slick-prev {
@@ -280,17 +253,18 @@ header ul.is-sticky li a.active {
 
 #properties-slider img {
   width: 100%;
+  height: 270px;
   display: block;
 }
 
 #properties-slider .property-details {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 #properties-slider .price {
-  font-size: 1.2rem;
   color: #343a40;
   font-weight: 800;
+  font-size: 1.2rem;
   margin: 0 0 0.5rem 0;
 }
 
@@ -320,37 +294,38 @@ header ul.is-sticky li a.active {
 }
 
 #properties button.rounded {
+  width: 350px;
   display: block;
   margin: 2rem auto 0;
-  width: 350px;
 }
 /* end: properties styles */
 
 /* start: agents styles */
 #agents {
-  margin: 4rem 0 6rem;
-  padding: 0 0 6rem;
-  border-bottom: 1px solid #ccc;
+  padding: 0 0 3rem;
+  margin: 3rem 0 3rem;
 }
 
 #agents p.large-paragraph {
-  width: 50%;
-  margin-bottom: 4rem;
+  width: 100%;
+  margin-bottom: 3rem;
 }
 
 #agents .flex {
-  flex-wrap: wrap;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 #agents .card {
   width: 32%;
+  height: 60%;
   background: #f0f0f0;
-  margin-bottom: 2rem;
+  margin-bottom: 0.8rem;
 }
 
 #agents .card img {
   width: 100%;
+  height: 60%;
 }
 
 #agents .card h3 {
@@ -364,35 +339,11 @@ header ul.is-sticky li a.active {
 }
 /* end: agents styles */
 
-/* start: best real estate company styles */
-#the-best {
-  margin: 2rem 0;
-}
-
-#the-best .flex > img {
-  width: 47%;
-}
-
-#the-best .flex > div {
-  width: 40%;
-}
-
-#the-best ul {
-  padding-left: 20px;
-  margin-bottom: 4rem;
-}
-
-#the-best ul li {
-  margin: 10px 0;
-}
-/* end: best real estate company styles */
-
 /* start: services styles */
 #services {
+  margin: 2rem 0;
+  padding: 1rem 0;
   background: #f8f9fa;
-  padding: 6rem 0;
-  margin: 8rem 0;
-  border-bottom: 1px solid #dee2e6;
 }
 
 #services h2 {
@@ -410,17 +361,17 @@ header ul.is-sticky li a.active {
 }
 
 #services .flex > div .fas {
-  color: #1f51ff;
-  font-size: 40px;
-  float: left;
-  margin-top: 15px;
   width: 20%;
+  float: left;
+  font-size: 40px;
+  margin-top: 15px;
+  color: #1f51ff;
   text-align: center;
 }
 
 #services .flex > div .services-card-right {
-  float: right;
   width: 75%;
+  float: right;
 }
 
 #services .flex > div a {
@@ -435,7 +386,7 @@ header ul.is-sticky li a.active {
 
 /* start: testimonials styles */
 #testimonials {
-  margin-bottom: 8rem;
+  margin-bottom: 3rem;
 }
 
 #testimonials h2 {
@@ -447,38 +398,40 @@ header ul.is-sticky li a.active {
 }
 
 #testimonials-slider blockquote {
+  max-width: 740px;
   font-size: 1.5rem;
   font-style: italic;
   margin: 1rem auto 3rem;
-  max-width: 740px;
 }
 
 #testimonials-slider .testimonials-caption {
-  width: 200px;
+  width: 230px;
   margin: 0 auto;
 }
 
 #testimonials-slider .testimonials-caption img {
   float: left;
-  border-radius: 30px;
   width: 60px;
+  height: 70px;
+  border-radius: 30px;
 }
 
 .testimonials-caption p {
-  position: relative;
   top: 13px;
   font-size: 1.2rem;
+  position: relative;
 }
 
 #testimonials-slider .slick-arrow {
-  text-decoration: none;
-  position: absolute;
-  font-size: 40px;
-  color: #222;
   top: 50%;
-  margin-top: -35px;
   z-index: 1;
+  color: #222;
+  font-size: 40px;
+  margin-top: -35px;
+  position: absolute;
+  text-decoration: none;
 }
+
 #testimonials-slider .slick-next {
   right: 0;
 }
@@ -486,8 +439,8 @@ header ul.is-sticky li a.active {
 
 /* start: contact us styles */
 #contact {
-  background: #f8f9fa;
   padding: 4rem 0 8rem;
+  background: #f8f9fa;
 }
 
 #contact h2 {
@@ -497,55 +450,60 @@ header ul.is-sticky li a.active {
 
 #form-container {
   width: 58%;
-  background: #fff;
-  padding: 3rem;
-  box-sizing: border-box;
   height: 0%;
+  padding: 3rem;
+  background: #fff;
+  box-sizing: border-box;
 }
 
 #form-container h3 {
   color: #000;
-  font-family: "Playfair Display", serif;
   margin-bottom: 2rem;
+  font-family: "Playfair Display", serif;
 }
 
 #form-container label {
-  display: block;
   color: #000;
+  display: block;
   margin-top: 1rem;
 }
 
 #form-container input,
 #form-container textarea {
-  display: block;
-  border-radius: 20px;
-  padding: 10px;
-  border: 1px solid #ced4da;
   width: 100%;
-  box-sizing: border-box;
   height: 43px;
-  font-family: "Roboto", "Helvetica", "Sans-serif";
+  padding: 10px;
+  display: block;
   font-size: 1rem;
   color: #495057;
+  border-radius: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ced4da;
+  font-family: "Roboto", "Helvetica", "Sans-serif";
 }
 
 #form-container textarea {
+  resize: none;
   height: 170px;
   margin-bottom: 2rem;
-  resize: none;
+}
+
+#form-container button a {
+  color: #fff;
+  text-decoration: none;
 }
 
 #address-container {
-  width: 38%;
-  background: #fff;
-  padding: 1.5rem;
-  box-sizing: border-box;
   height: 0%;
+  width: 38%;
+  padding: 1.5rem;
+  background: #fff;
+  box-sizing: border-box;
 }
 
 #address-container label {
-  font-weight: 700;
   display: block;
+  font-weight: 700;
   margin-top: 2rem;
 }
 
@@ -554,35 +512,35 @@ header ul.is-sticky li a.active {
 }
 
 #address-container address {
-  margin-bottom: 1.5rem;
   font-style: normal;
+  margin-bottom: 1.5rem;
 }
 
-#address-container a {
-  text-decoration: none;
+#address-container p {
   color: #1f51ff;
+  text-decoration: none;
 }
 
-#address-container a:hover {
+#address-container p:hover {
   text-decoration: underline;
 }
 /* end: contact us styles */
 
 /* start: footer styles */
 footer {
+  padding: 3.5rem 0;
   background: #333;
-  padding: 8rem 0;
 }
 
 footer .flex {
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
   border-bottom: 1px solid #777;
 }
 
 footer h5 {
   color: #fff;
-  margin-bottom: 1rem;
   font-weight: 300;
+  margin-bottom: 2rem;
 }
 
 footer h5.follow-us {
@@ -590,7 +548,7 @@ footer h5.follow-us {
 }
 
 footer .footer-about {
-  width: 47%;
+  width: 40%;
 }
 
 footer .footer-about p {
@@ -602,9 +560,9 @@ footer .footer-quick-links {
 }
 
 footer .footer-quick-links ul {
-  list-style-type: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 footer .footer-quick-links ul li {
@@ -629,30 +587,30 @@ footer .footer-subscribe {
 }
 
 footer .footer-subscribe input {
-  border-radius: 30px;
+  width: 80%;
   height: 43px;
-  font-family: "Roboto", "Helvetica", "Sans-serif";
-  border: 1px solid #6c757d;
-  background-color: transparent;
-  font-size: 1rem;
   padding: 10px;
   color: #fff;
+  font-size: 1rem;
+  border-radius: 30px;
   box-sizing: border-box;
-  width: 80%;
+  border: 1px solid #6c757d;
+  background-color: transparent;
+  font-family: "Roboto", "Helvetica", "Sans-serif";
 }
 
 footer button.right-rounded {
+  right: 0;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.5;
+  position: absolute;
+  background: #1f51ff;
+  padding: 10px 30px 9px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
-  background: #1f51ff;
-  font-size: 16px;
-  color: #000;
-  padding: 10px 30px 9px;
-  line-height: 1.5;
-  cursor: pointer;
-  border: none;
-  position: absolute;
-  right: 0;
 }
 
 footer button.right-rounded:hover {
@@ -660,14 +618,14 @@ footer button.right-rounded:hover {
 }
 
 footer .footer-subscribe ul {
-  list-style-type: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 footer .footer-subscribe ul li {
-  display: inline-block;
   margin: 0 16px;
+  display: inline-block;
 }
 
 footer .footer-subscribe ul li:first-child {
@@ -675,8 +633,8 @@ footer .footer-subscribe ul li:first-child {
 }
 
 footer .footer-subscribe ul li a {
-  text-decoration: none;
   color: #777;
+  text-decoration: none;
 }
 
 footer .footer-subscribe ul li a:hover {
@@ -684,9 +642,9 @@ footer .footer-subscribe ul li a:hover {
 }
 
 footer small {
-  margin-top: 3rem;
-  font-size: 1rem;
   display: block;
+  font-size: 1rem;
+  margin-top: 3rem;
   text-align: center;
 }
 
@@ -711,28 +669,28 @@ footer small a:hover {
   }
 
   nav ul {
-    position: fixed;
-    background: #fff;
-    right: -100%;
     top: 0;
     margin: 0;
-    padding: 2rem;
+    right: -100%;
     height: 100%;
     width: 300px;
+    padding: 2rem;
+    position: fixed;
+    background: #fff;
     box-sizing: border-box;
     box-shadow: 5px 0 10px 3px #999;
   }
 
   #close-flyout {
-    position: absolute;
+    margin: 0;
     right: 2rem;
     top: 1.5rem;
-    font-size: 30px;
     color: #777;
-    cursor: pointer;
     display: block;
     line-height: 1;
-    margin: 0;
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
   }
 
   nav ul li {
@@ -848,8 +806,8 @@ footer small a:hover {
   }
 
   footer .footer-about p {
-    font-size: 1rem;
     width: 100%;
+    font-size: 1rem;
   }
 
   footer .footer-subscribe input {
@@ -867,8 +825,8 @@ footer small a:hover {
   }
 
   #agents {
-    margin: 4rem 0 3rem;
     padding: 0 0 3rem;
+    margin: 4rem 0 3rem;
   }
 
   #agents .card {
@@ -893,8 +851,8 @@ footer small a:hover {
   }
 
   #services {
-    padding: 4rem 0 3rem;
     margin: 4rem 0;
+    padding: 4rem 0 3rem;
   }
 
   #services .flex > div {
@@ -932,13 +890,13 @@ footer small a:hover {
 
 @media (max-width: 400px) {
   #hero .hero-text {
-    max-width: 275px;
     width: 100%;
+    max-width: 275px;
   }
 
   #properties button.rounded {
-    max-width: 250px;
     width: 100%;
+    max-width: 250px;
   }
 
   nav ul {
